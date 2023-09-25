@@ -25,4 +25,16 @@ public class ContactHelper extends HelperBase {
     public void returnHomePage() {
         click(By.linkText("home page"));
     }
+
+    public void selectContact() {
+        click(By.cssSelector("img[title= 'Edit']"));
+    }
+
+    public void submitDeletionContact() {
+        click(By.cssSelector("input[value = 'Delete']"));
+    }
+
+    public void submitContactModification() {
+        click(By.name("update"));
+    }
 }
