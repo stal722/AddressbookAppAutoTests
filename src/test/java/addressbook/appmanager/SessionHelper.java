@@ -12,7 +12,7 @@ public class SessionHelper extends HelperBase {
 
     public void openApp() {
         driver.get("http://localhost:8080/addressbook/");
-        driver.manage().window().setSize(new Dimension(1550, 838));
+        driver.manage().window().maximize();
 
     }
 }
