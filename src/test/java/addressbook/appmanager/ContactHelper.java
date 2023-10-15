@@ -42,4 +42,13 @@ public class ContactHelper extends HelperBase {
     public void submitContactModification() {
         click(By.name("update"));
     }
+
+    public void contactCreate(ContactData contact, boolean creationGroupList) {
+        fillContactForms(contact, creationGroupList);
+        submitCreationContact();
+    }
+
+    public boolean isContactPresent() {
+        return isElementPresent(By.cssSelector("img[title= 'Edit']"));
+    }
 }
